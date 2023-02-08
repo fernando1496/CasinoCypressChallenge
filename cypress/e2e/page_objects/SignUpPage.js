@@ -24,6 +24,19 @@ class SignUpPage {
         return cy.get('[data-test="error-email"]').should('be.visible')
      }
 
+     get passwordError(){
+        return cy.get('[data-test="error-password"]').should('be.visible')
+     }
+     
+     get confirmationPasswordError(){
+        return cy.get('[data-test="error-password_confirmation"]').should('be.visible')
+     }
+
+     get termsAndConditionError(){
+        return cy.get('[data-test="error-terms_and_conditions"]').should('be.visible')
+     }
+     
+     
     //Actions to locators
     typeEmail(email) {
         this.emailInput.type(email)

@@ -8,8 +8,12 @@ class HomePage {
         return cy.get('.mfp-close').should('be.visible')
      }
 
-     get notificationTitle() {
+    get notificationTitle() {
         return cy.get('.notification__title').should('be.visible')
+     }
+
+     get viewProfileButton() {
+        return cy.get('button').contains('View profile').should('be.visible')
      }
 
     //Actions to locators
@@ -19,6 +23,10 @@ class HomePage {
 
     clickModalCloseButton() {
         this.modalCloseButton.click()
+    }
+
+    clickProfileButton() {
+        this.viewProfileButton.click()
     }
 }
  export default HomePage

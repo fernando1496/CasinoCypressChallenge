@@ -1,5 +1,8 @@
 {
   "existingUsername": "invalid-email@test.com",
   "invalidUsername": "invalidemail",
-  "invlaidPassword": "test"
+  "invlaidPasswordNoDigits": "TestLongPass",
+  "invlaidPasswordNoCapital": "testlongpass1",
+  "invlaidPasswordShort": "Test1",
+  "differentConfirmationPassword": "DiffPassword1"
 }
