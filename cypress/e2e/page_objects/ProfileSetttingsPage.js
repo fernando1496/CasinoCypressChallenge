@@ -33,5 +33,26 @@ class ProfileSetttingsPage {
         this.profileSettingsButton.click()
     }
 
+    typeFirstName(firstName) {
+      this.firstNameInput.type(firstName)
+    }
+
+    typeLastName(lastName) {
+      this.lastNameInput.type(lastName)
+    }
+
+    typeMiddleName(middleName) {
+      this.middleNameInput.type(middleName)
+    }
+
+    selectGender(gender) {
+      this.gender.click()
+      return cy.get('li').contains(gender).should('be.visible').click()
+    }
+
+    clicklUpdateInfoButton() {
+      this.updateInfoButton.click()
+  }
+
 }
  export default ProfileSetttingsPage

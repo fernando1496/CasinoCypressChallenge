@@ -4,5 +4,9 @@
   "invlaidPasswordNoDigits": "TestLongPass",
   "invlaidPasswordNoCapital": "testlongpass1",
   "invlaidPasswordShort": "Test1",
-  "differentConfirmationPassword": "DiffPassword1"
+  "differentConfirmationPassword": "DiffPassword1",
+  "firstName": "testName",
+  "lastName": "testLastName",
+  "middleName": "testMiddleName",
+  "gender": "Male"
 }

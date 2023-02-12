@@ -13,7 +13,7 @@ class HomePage {
      }
 
      get viewProfileButton() {
-        return cy.get('button').contains('View profile').should('be.visible')
+        return cy.get('span').contains('View profile').should('be.visible')
      }
 
     //Actions to locators
